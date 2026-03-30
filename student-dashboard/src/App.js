@@ -10,11 +10,11 @@ function App() {
   const [top5, setTop5] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/average")
+    fetch("https://student-api-joho.onrender.com/average")
       .then(res => res.json())
       .then(data => setAverages(data));
 
-    fetch("http://127.0.0.1:5000/top5student")
+    fetch("https://student-api-joho.onrender.com/top5student")
       .then(res => res.json())
       .then(data => setTop5(data));
   }, []);
