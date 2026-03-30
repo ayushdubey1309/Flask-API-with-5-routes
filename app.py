@@ -1,9 +1,11 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import pandas as pd
 app=Flask(__name__)
+CORS(app) # kya likhu yha
 
 #load the dataset 
-df= pd.read_csv("StudentsPerformance.csv")
+df= pd.read_csv("/home/bog/day1/StudentsPerformance.csv")
 
 #rout 1 - Home
 
