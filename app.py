@@ -5,7 +5,7 @@ app=Flask(__name__)
 CORS(app) # kya likhu yha
 
 #load the dataset 
-df= pd.read_csv("/home/bog/day1/StudentsPerformance.csv")
+df= pd.read_csv("https://raw.githubusercontent.com/ayushdubey1309/Flask-API-with-5-routes/main/StudentsPerformance.csv")
 
 #rout 1 - Home
 
